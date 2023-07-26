@@ -1,6 +1,6 @@
 var slideImg = document.getElementById("slideImg");
 
-var images = new Array("../img/Kampanya.jpg", "../img/akıllıkilitbanner.jpg");
+var images = new Array("../img/banner1.jpg", "../img/banner2.jpg");
 
 var len = images.length;
 var i = 0;

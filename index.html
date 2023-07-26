@@ -20,6 +20,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <!-- ========== Little Logo ========== -->
     <link
@@ -34,8 +38,19 @@
     </title>
   </head>
   <body onload="slider()">
+    <!-- ========== Loader ========== -->
+    <div id="loading">
+      <img src="img/loader.gif" />
+      <p>Yükleniyor...</p>
+    </div>
+
+    <!-- ========== go up button ========== -->
+    <a class="up">
+      <i class="fa fa-arrow-up"></i>
+    </a>
+
     <!-- ========== NAV Starts ========== -->
-    <nav class="nav">
+    <nav class="nav" style="position: relative">
       <div class="container">
         <h1 class="logo">
           <a href="/index.html"><img src="img/logo.png" alt="Nüans Logo" /></a>
@@ -80,7 +95,7 @@
     <section class="cards">
       <h1>KAPI KATEGORİLERİ</h1>
       <div class="row">
-        <div class="card-col">
+        <a class="card-col" href="/Türkçe/teknikbilgiler.html#steelDoor">
           <img src="img/çelikkapı.jpg" alt="" class="card-image" />
           <h3>Çelik Kapılar</h3>
           <p>
@@ -88,12 +103,10 @@
             yapmaktayız. Birbirinden eşsiz, kaliteli ve estetik çelik kapı
             modellerimizi görebilir ve özellikleri hakkında bilgi alabilirsiniz.
           </p>
-          <a href="/Türkçe/teknikbilgiler.html#steelDoor" class="card-btn"
-            >Devamını Oku</a
-          >
-        </div>
+          <button class="btn">Devamını Oku</button>
+        </a>
 
-        <div class="card-col">
+        <a class="card-col" href="/Türkçe/teknikbilgiler.html#fireDoor">
           <img src="img/yangınkapısı.jpg" alt="" class="card-image" />
           <h3>Yangın Kapıları</h3>
           <p>
@@ -101,32 +114,28 @@
             standarlara uygun güvenli, sağlam, dayanıklı yangın kapılarımızı
             görebilir ve özellikleri hakkında bilgi alabilirsiniz.
           </p>
-          <a href="/Türkçe/teknikbilgiler.html#fireDoor" class="card-btn"
-            >Devamını Oku</a
-          >
-        </div>
+          <button class="btn">Devamını Oku</button>
+        </a>
       </div>
 
       <h1>TEKNOLOJİ</h1>
       <div class="row">
-        <div class="card-col">
+        <a class="card-col" href="/Türkçe/teknikbilgiler.html#solidSystem">
           <img src="img/solidsystem.jpg" alt="" class="card-image" />
           <h3>Solid System Nedir ?</h3>
           <p>
             Firmamızın uzun yıllar boyunca edindiği bilgi birikimi ile
             tasarlanmış Solid System hakkında bilgi edinebilirsiniz.
           </p>
-          <a href="/Türkçe/teknikbilgiler.html#solidSystem" class="card-btn"
-            >Devamını Oku</a
-          >
-        </div>
+          <button class="btn">Devamını Oku</button>
+        </a>
 
-        <div class="card-col">
+        <a class="card-col" href="/Türkçe/akillikilit.html">
           <img src="img/akıllıkilit.jpg" alt="" class="card-image" />
           <h3>Akıllı Kilit</h3>
           <p>Yeni Akıllı Kilit Sistemlerimizi tanımak ister misiniz ?</p>
-          <a class="card-btn">Devamını Oku</a>
-        </div>
+          <button class="btn">Devamını Oku</button>
+        </a>
       </div>
     </section>
     <!-- ========== Card Section Ends ========== -->
@@ -263,14 +272,14 @@
             <div class="social-links">
               <a
                 href="https://www.facebook.com/nuanscelikkapi"
-                class="facebook"
+                class="slfacebook"
                 target="_blank"
                 ><i class="fab fa-facebook"></i
               ></a>
               <a
                 href="https://www.instagram.com/nuanscelikkapi/"
                 target="_blank"
-                class="instagram"
+                class="slinstagram"
                 ><i class="fab fa-instagram"></i
               ></a>
             </div>
@@ -281,6 +290,8 @@
 
     <!-- ========== Footer Ends ========== -->
 
+    <script src="./js/loader.js"></script>
+    <script src="./js/goup.js"></script>
     <script src="./js/hamburger-menu.js"></script>
     <script src="./js/counter.js"></script>
     <script src="./js/banner.js"></script>
